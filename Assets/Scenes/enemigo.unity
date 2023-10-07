@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 108170589}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: piso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,8 +280,8 @@ Transform:
   m_GameObject: {fileID: 294192337}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.6863, y: -6.318128, z: 0.0948204}
-  m_LocalScale: {x: 61.455284, y: 3.0928102, z: 1}
+  m_LocalPosition: {x: 7.739934, y: -6.318128, z: 0.0948204}
+  m_LocalScale: {x: 33.561737, y: 3.0928102, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 108170589}
@@ -494,8 +494,8 @@ Transform:
   m_GameObject: {fileID: 1219963145}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.7046, y: -0.7173281, z: 0.0948204}
-  m_LocalScale: {x: 61.411312, y: 14.37351, z: 1}
+  m_LocalPosition: {x: 7.8352337, y: -0.7173281, z: 0.0948204}
+  m_LocalScale: {x: 33.674023, y: 14.37351, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1245136420}
@@ -618,8 +618,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1292943679}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.37, y: 0, z: -10}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -634,7 +634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1499871296}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: chequeoPiso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -734,8 +734,8 @@ Transform:
   m_GameObject: {fileID: 1558777733}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.7247, y: -0.9642281, z: 0.0948204}
-  m_LocalScale: {x: 61.377926, y: 7.6486726, z: 1}
+  m_LocalPosition: {x: 7.7783337, y: -0.9642281, z: 0.0948204}
+  m_LocalScale: {x: 33.485683, y: 7.6486726, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1245136420}
@@ -753,8 +753,7 @@ GameObject:
   - component: {fileID: 1860606853}
   - component: {fileID: 1860606852}
   - component: {fileID: 1860606851}
-  - component: {fileID: 1860606856}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -910,27 +909,6 @@ Transform:
   - {fileID: 1499871296}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1860606856
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1860606850}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dec94ead127fada4a82adac81dc25175, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
