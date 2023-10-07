@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9257238dd7d399649842d4e1e8bdca0e
+guid: 5d06fb2365299fc4c846e0edcdf408b8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VillainIdleSheet_0
+      name: VillainIdleSheet1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 874
-        height: 2000
+        width: 1488
+        height: 1913
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bbe282fa267c4945a0239fad284d3f9
-      internalID: 587687071
+      spriteID: 58fcf8fd996eb2c4185b1d80b8b5ad67
+      internalID: -1781093330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VillainIdleSheet_1
+      name: VillainIdleSheet1_1
       rect:
         serializedVersion: 2
-        x: 874
+        x: 1488
         y: 0
-        width: 874
-        height: 2000
+        width: 1488
+        height: 1913
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 864c8eca11b9a7e41afb61ea986f2297
-      internalID: 987269085
+      spriteID: fa35f3a9060065e45bb4c53a411598d5
+      internalID: -1437699586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VillainIdleSheet_2
+      name: VillainIdleSheet1_2
       rect:
         serializedVersion: 2
-        x: 1748
+        x: 2976
         y: 0
-        width: 874
-        height: 2000
+        width: 1488
+        height: 1913
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf179b65b21b1984bbc00057b5cf3fd6
-      internalID: -755487013
+      spriteID: 9e7beb27a6cdc9e42ae811fe717c4b59
+      internalID: -2062429622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VillainIdleSheet_3
+      name: VillainIdleSheet1_3
       rect:
         serializedVersion: 2
-        x: 2622
+        x: 4464
         y: 0
-        width: 874
-        height: 2000
+        width: 1488
+        height: 1913
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f57205cb614f9f448b35c7e99be365c
-      internalID: 1971293963
+      spriteID: b4338b0464062ec438214048a41ecd4a
+      internalID: -1470321228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VillainIdleSheet_4
+      name: VillainIdleSheet1_4
       rect:
         serializedVersion: 2
-        x: 3496
+        x: 5952
         y: 0
-        width: 874
-        height: 2000
+        width: 1488
+        height: 1913
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,8 +234,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2154438d5348eb44493513106a99639e
-      internalID: -810331715
+      spriteID: 219522d2080f6f84c8af9235cf9411b9
+      internalID: 122007274
       vertices: []
       indices: 
       edges: []
@@ -251,11 +251,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      VillainIdleSheet_0: 587687071
-      VillainIdleSheet_1: 987269085
-      VillainIdleSheet_2: -755487013
-      VillainIdleSheet_3: 1971293963
-      VillainIdleSheet_4: -810331715
+      VillainIdleSheet1_0: -1781093330
+      VillainIdleSheet1_1: -1437699586
+      VillainIdleSheet1_2: -2062429622
+      VillainIdleSheet1_3: -1470321228
+      VillainIdleSheet1_4: 122007274
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
