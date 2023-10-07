@@ -544,6 +544,7 @@ GameObject:
   - component: {fileID: 1292943682}
   - component: {fileID: 1292943681}
   - component: {fileID: 1292943680}
+  - component: {fileID: 1292943683}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -625,6 +626,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1292943683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292943679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea291a4926df1d4691bf85122b39d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1860606855}
 --- !u!1 &1499871295
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,7 +664,7 @@ Transform:
   m_GameObject: {fileID: 1499871295}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6, y: -8.631581, z: 0}
+  m_LocalPosition: {x: -0.6, y: -13.3, z: 0}
   m_LocalScale: {x: 17.263163, y: 17.263163, z: 17.263163}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -750,10 +764,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1860606855}
   - component: {fileID: 1860606854}
-  - component: {fileID: 1860606853}
   - component: {fileID: 1860606852}
   - component: {fileID: 1860606851}
   - component: {fileID: 1860606856}
+  - component: {fileID: 1860606857}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -823,25 +837,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1860606853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1860606850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d730b39c4c4d169408151cc2a4960b4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadMovimiento: 5
-  elRB: {fileID: 1860606852}
-  fuerzaSalto: 4
-  puntoDetectaPiso: {fileID: 1499871296}
-  esPiso:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!212 &1860606854
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -931,6 +926,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1860606857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860606850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25eb5e8236c77d646b9f67b86e69f79e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velMov: 7.5
+  altSalto: 5
+  cuerpoRigido: {fileID: 1860606852}
+  controlSuelo: {fileID: 1499871296}
+  queEsSuelo:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
