@@ -7,6 +7,7 @@ public class controlPersonaje : MonoBehaviour
 
     public float velocidadMovimiento;
     public Rigidbody2D elRB;
+    public float fuerzaSalto;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,5 +18,10 @@ public class controlPersonaje : MonoBehaviour
     void Update()
     {
         elRB.velocity = new Vector2( velocidadMovimiento* Input.GetAxis ("Horizontal"), elRB.velocity.y );
+    
+        if (Input.GetButtonDown("Jump"))
+        {
+            elRB.velocity = new Vector2(elRB.velocity.x, fuerzaSalto);
+        }
     }
 }
