@@ -8,7 +8,7 @@ public class ControlPlayer : MonoBehaviour
     public float velMov;
     public float altSalto;
     private bool sePuedeDobleSalto;
-    private bool teclaAbajoPresionada;
+    //private bool teclaAbajoPresionada;
 
 
     [Header("Componentes")]
@@ -66,20 +66,20 @@ public class ControlPlayer : MonoBehaviour
         //Animacion
         anim.SetFloat("velMov",Mathf.Abs(cuerpoRigido.velocity.x));
         anim.SetBool("esSuelo",esSuelo);
-        anim.SetBool("teclaAbajoPresionada",teclaAbajoPresionada);
+       // anim.SetBool("teclaAbajoPresionada",teclaAbajoPresionada);
 
-        teclaAbajoPresionada = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
+       // teclaAbajoPresionada = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
 
          // Animación especial cuando la tecla "S" o la flecha abajo está presionada
-    if (teclaAbajoPresionada)
-    {
-        cuerpoRigido.velocity = new Vector2(0,0);
-    }
+   // if (teclaAbajoPresionada)
+    //{
+      //  cuerpoRigido.velocity = new Vector2(0,0);
+    //}
     }
 
-    public bool EnAnimacionEspecial()
-{
-    return anim.GetCurrentAnimatorStateInfo(0).IsName("Player_bambu");
-}
+  //  public bool EnAnimacionEspecial()
+//{
+  //  return anim.GetCurrentAnimatorStateInfo(0).IsName("Player_bambu");
+//}
 
 }

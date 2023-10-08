@@ -12,10 +12,11 @@ public class DañoJugador : MonoBehaviour
     {
         if (other.CompareTag("Player") && puedeHacerDano)
         {
-            ControlPlayer controlPlayer = other.GetComponent<ControlPlayer>();
+           ProgressBarController1 progressBarController1 = other.GetComponent<ProgressBarController1>();
+
 
             // Verificar si el jugador está en la animación especial
-            if (!controlPlayer.EnAnimacionEspecial())
+            if (!progressBarController1.EnAnimacionEspecial())
             {
                 Debug.Log("HIT");
                 SceneManager.LoadScene(perdiste);
