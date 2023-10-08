@@ -5,10 +5,12 @@ using UnityEngine;
 public class controlenemigo : MonoBehaviour
 {
     public float velMov;
+    private bool enEspera;
+    private Animator anim;
     public Transform puntoDer, puntoIzq;
     private bool movimientoDer;
 
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rigidBody;
     public SpriteRenderer theSR;
 
     public float tiempoMov, tiempoEspera;
@@ -17,7 +19,8 @@ public class controlenemigo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rigidBody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
 
         puntoDer.parent = null;
         puntoIzq.parent = null;
@@ -34,7 +37,7 @@ public class controlenemigo : MonoBehaviour
         movCount -= Time.deltaTime;
          if (movimientoDer)
        {
-        rigidbody.velocity = new Vector2(velMov, rigidbody.velocity.y);
+        rigidBody.velocity = new Vector2(velMov, rigidBody.velocity.y);
         theSR.flipX = true;
 
         if(transform.position.x > puntoDer.position.x)
@@ -44,7 +47,7 @@ public class controlenemigo : MonoBehaviour
 
        } else 
        {
-        rigidbody.velocity = new Vector2(-velMov, rigidbody.velocity.y);
+        rigidBody.velocity = new Vector2(-velMov, rigidBody.velocity.y);
         theSR.flipX = false;
 
         if(transform.position.x < puntoIzq.position.x)
@@ -61,13 +64,16 @@ public class controlenemigo : MonoBehaviour
     } else if (esperaCount > 0)
        {
         esperaCount -= Time.deltaTime;
-        rigidbody.velocity = new Vector2(0f, rigidbody.velocity.y);
+        rigidBody.velocity = new Vector2(0f, rigidBody.velocity.y);
+        enEspera=true;
 
         if (esperaCount <= 0)
        {
+        enEspera=false;
          movCount  = Random.Range(tiempoMov * .75f, tiempoEspera * 1.25f);
        }
        }
+       anim.SetBool("enEspera",enEspera);
 
        
     }
