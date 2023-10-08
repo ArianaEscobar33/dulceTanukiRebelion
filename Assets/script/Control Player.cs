@@ -23,6 +23,7 @@ public class ControlPlayer : MonoBehaviour
 
     public AudioSource SonidoDeSalto;
     public AudioSource SonidoCaminar;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,7 @@ public class ControlPlayer : MonoBehaviour
 
         SonidoDeSalto = GetComponent<AudioSource>();
         SonidoCaminar = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame

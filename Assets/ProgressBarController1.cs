@@ -9,7 +9,7 @@ public class ProgressBarController1 : MonoBehaviour
     private float tiempoPresionado = 0f;
     private bool teclaAbajoPresionada = false;
     //private bool avisoCazadorShown = false;
-    
+    public AudioSource SonidoTransformacion;
      [Header("Animacion")]
     public Animator anim;
     public SpriteRenderer spriteR;
@@ -19,6 +19,7 @@ public class ProgressBarController1 : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         spriteR = GetComponent<SpriteRenderer>();
+        SonidoTransformacion = GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -28,6 +29,7 @@ public class ProgressBarController1 : MonoBehaviour
             cuerpoRigido.velocity = new Vector2(0,0);
             tiempoPresionado += Time.deltaTime;
             teclaAbajoPresionada = true;
+            SonidoTransformacion.Play(); 
         }
         else
         {
