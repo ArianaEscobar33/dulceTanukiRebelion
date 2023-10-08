@@ -16,7 +16,7 @@ public class CambiarImagenes : MonoBehaviour
             {
                 imagenes[i].SetActive(false);
             }
-            InvokeRepeating("CambiarImagen", 5f, 5f);
+            InvokeRepeating("CambiarImagen", 3.5f, 3.5f);
         }
         else
         {

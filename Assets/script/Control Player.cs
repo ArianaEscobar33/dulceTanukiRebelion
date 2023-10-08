@@ -66,13 +66,14 @@ public class ControlPlayer : MonoBehaviour
         //Animacion
         anim.SetFloat("velMov",Mathf.Abs(cuerpoRigido.velocity.x));
         anim.SetBool("esSuelo",esSuelo);
+        anim.SetBool("teclaAbajoPresionada",teclaAbajoPresionada);
 
         teclaAbajoPresionada = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
 
          // Animación especial cuando la tecla "S" o la flecha abajo está presionada
     if (teclaAbajoPresionada)
     {
-        anim.Play("Player_bambu");
+        cuerpoRigido.velocity = new Vector2(cuerpoRigido.velocity.x,cuerpoRigido.velocity.y);
     }
     }
 
