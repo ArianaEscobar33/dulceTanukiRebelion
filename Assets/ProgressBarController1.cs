@@ -7,32 +7,36 @@ public class ProgressBarController1 : MonoBehaviour
     public Image avisoCazadorImage; // Agrega una referencia a la imagen de aviso en el Inspector.
 
     private float tiempoPresionado = 0f;
-    private bool teclaPresionada = false;
-    private bool avisoCazadorShown = false;
+    private bool teclaAbajoPresionada = false;
+    //private bool avisoCazadorShown = false;
+
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             tiempoPresionado += Time.deltaTime;
-            teclaPresionada = true;
+            teclaAbajoPresionada = true;
         }
         else
         {
             tiempoPresionado = 0f;
-            teclaPresionada = false;
+            teclaAbajoPresionada = false;
         }
 
-        if (teclaPresionada)
+        if (teclaAbajoPresionada)
         {
-            progressBar.value = tiempoPresionado / 2.0f;
+            progressBar.value = tiempoPresionado / 10f;
 
             // Verifica si el valor del slider alcanza su máximo (1.0f).
-            if (progressBar.value >= 1.0f && !avisoCazadorShown)
+            //if (progressBar.value >= 1.0f && !avisoCazadorShown)
+             if (progressBar.value >= 1.0f)
             {
+                
                 // Activa la imagen de aviso del cazador.
-                avisoCazadorImage.gameObject.SetActive(true);
-                avisoCazadorShown = true; // Marca que se ha mostrado el aviso.
+                //avisoCazadorImage.gameObject.SetActive(true);
+                
+                //avisoCazadorShown = true; // Marca que se ha mostrado el aviso.
             }
         }
         else
@@ -40,8 +44,8 @@ public class ProgressBarController1 : MonoBehaviour
             progressBar.value = 0f;
 
             // Si la tecla se suelta, oculta la imagen de aviso.
-            avisoCazadorImage.gameObject.SetActive(false);
-            avisoCazadorShown = false;
+            //avisoCazadorImage.gameObject.SetActive(false);
+            //avisoCazadorShown = false;
         }
     }
 }

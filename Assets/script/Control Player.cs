@@ -73,7 +73,7 @@ public class ControlPlayer : MonoBehaviour
          // Animación especial cuando la tecla "S" o la flecha abajo está presionada
     if (teclaAbajoPresionada)
     {
-        cuerpoRigido.velocity = new Vector2(cuerpoRigido.velocity.x,cuerpoRigido.velocity.y);
+        cuerpoRigido.velocity = new Vector2(0,0);
     }
     }
 
