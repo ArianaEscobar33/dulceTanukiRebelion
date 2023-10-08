@@ -747,7 +747,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1280806925}
   - component: {fileID: 1280806924}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Suelo_Bamboo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
