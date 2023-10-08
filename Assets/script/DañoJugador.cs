@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DañoJugador : MonoBehaviour
 {
+    public string perdiste;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,7 @@ public class DañoJugador : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("HIT");
+            SceneManager.LoadScene(perdiste);
         }
     }
 }
