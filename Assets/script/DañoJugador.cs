@@ -6,23 +6,21 @@ using UnityEngine.SceneManagement;
 public class DañoJugador : MonoBehaviour
 {
     public string perdiste;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private bool puedeHacerDano = true;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player") && puedeHacerDano)
         {
-            Debug.Log("HIT");
-            SceneManager.LoadScene(perdiste);
+            ControlPlayer controlPlayer = other.GetComponent<ControlPlayer>();
+
+            // Verificar si el jugador está en la animación especial
+            if (!controlPlayer.EnAnimacionEspecial())
+            {
+                Debug.Log("HIT");
+                SceneManager.LoadScene(perdiste);
+            }
         }
     }
 }
+
