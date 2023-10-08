@@ -37,7 +37,7 @@ public class ProgressBarController1 : MonoBehaviour
 
         if (teclaAbajoPresionada)
         {
-            progressBar.value = tiempoPresionado / 7f;
+            progressBar.value = tiempoPresionado / 5.5f;
 
             // Verifica si el valor del slider alcanza su máximo (1.0f).
             //if (progressBar.value >= 1.0f && !avisoCazadorShown)

@@ -21,11 +21,16 @@ public class ControlPlayer : MonoBehaviour
     private Animator anim;
     private SpriteRenderer spriteR;
 
+    public AudioSource SonidoDeSalto;
+    public AudioSource SonidoCaminar;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         spriteR = GetComponent<SpriteRenderer>();
+
+        SonidoDeSalto = GetComponent<AudioSource>();
+        SonidoCaminar = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -33,7 +38,11 @@ public class ControlPlayer : MonoBehaviour
     {
         // movimiento lineal
         cuerpoRigido.velocity = new Vector2(velMov * Input.GetAxis("Horizontal"),cuerpoRigido.velocity.y);
-
+        
+        if (Input.GetButtonDown("Horizontal"))
+        {
+           SonidoCaminar.Play(); 
+        }
         // Saltos
         esSuelo = Physics2D.OverlapCircle(controlSuelo.position, .2f, queEsSuelo);
         if (esSuelo)
@@ -42,6 +51,7 @@ public class ControlPlayer : MonoBehaviour
         }
         if (Input.GetButtonDown("Jump"))
         {
+            SonidoDeSalto.Play();
             if (esSuelo)
             {
                 cuerpoRigido.velocity = new Vector2(cuerpoRigido.velocity.x,altSalto);
